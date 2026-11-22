@@ -120,7 +120,8 @@ p { margin: 0 0 1em; }
                 radial-gradient(circle 12px at 100% 62%, transparent 11px, #000 12px) right / 51% 100% no-repeat;
 }
 .ticket:hover { background: var(--bg); }
-.ticket canvas { width: 156px; height: 156px; }
+/* light frame behind each mascot so its dark pixel outline stays visible in the dark theme */
+.ticket canvas { width: 156px; height: 156px; background: var(--film-fg); border: 3px solid var(--ink); }
 .ticket.poke canvas { animation: poke .32s steps(3); }
 @keyframes poke { 30% { transform: translateY(-10px) rotate(-6deg); } 70% { transform: translateY(0) rotate(5deg); } }
 .t-name { font: 600 38px/1 var(--pixel); margin-top: 4px; }
