@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- GitHub Pages can't send custom headers, so the security policy lives here. Only this site's own files run;
+       the one outside request allowed is the version check to the GitHub API. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src https://api.github.com; manifest-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <title>Reelo · Keep your TikTok streaks alive</title>
+  <meta name="description" content="Reelo is a free Android app that keeps your TikTok streaks alive every night at 00.00 and counts the reels you watch, with four pixel mascots.">
+  <meta name="theme-color" content="#2B2118">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reelo · Keep your TikTok streaks alive">
+  <meta property="og:description" content="Free Android app: sends your TikTok streak messages at 00.00 and counts your reels, with pixel mascots.">
+  <meta property="og:image" content="https://stevenwidinata-sys.github.io/reelo-site/img/og.png">
+  <meta property="og:url" content="https://stevenwidinata-sys.github.io/reelo-site/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icon-180.png">
+  <link rel="preload" href="fonts/jersey.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/mascots.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="#" aria-label="Reelo home">
+        <canvas class="brand-mascot" data-mascot="reelo" width="52" height="52" role="img" aria-label="Reelo mascot"></canvas>
+        <span class="brand-name">Reelo</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#mascots" data-i18n="navMascots">Mascots</a>
+        <a href="#features" data-i18n="navFeatures">Features</a>
+        <a href="#install" data-i18n="navInstall">Install</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="id" aria-pressed="false">ID</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <p class="kicker" data-i18n="kicker">Android app · free · no internet permission</p>
+          <h1 data-i18n="title">Never lose a TikTok streak again.</h1>
+          <p class="lead" data-i18n="lead">Reelo sends your streak messages for you every night at 00.00, and counts the reels you watch on TikTok, YouTube Shorts and Instagram, with a pixel mascot that gets tired the more you scroll.</p>
+          <div class="cta">
+            <a id="dl-btn" class="btn btn-main" href="https://github.com/OneillAlim/reelo/releases/download/v1.0/Reelo-v1.0.apk" rel="noopener noreferrer">
+              <span data-i18n="download">Download APK</span>
+              <span class="chip" id="dl-chip">v1.0 · 2.4 MB</span>
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/OneillAlim/reelo" rel="noopener noreferrer" data-i18n="source">View source</a>
+          </div>
+          <p class="req"><span data-i18n="req">Needs Android 9 or newer.</span> <span id="ver-status" class="ver-status" aria-live="polite"></span></p>
+        </div>
+
+        <div class="screen" aria-hidden="true">
+          <div class="bulbs"></div>
+          <div class="film">
+            <canvas class="hero-mascot" data-mascot="reelo" data-blink="1" width="208" height="208"></canvas>
+            <div class="flame-count"><span class="flame-num">12</span><span class="flame-lbl" data-i18n="heroSafe">streaks safe</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mascots" class="sec">
+      <div class="wrap">
+        <h2 data-i18n="castTitle">Meet the cast</h2>
+        <p class="sub" data-i18n="castSub">Four pixel mascots, drawn from the same code as the app. Tap one to change its mood.</p>
+        <div class="cast">
+          <button type="button" class="ticket" data-mascot-card="reelo">
+            <canvas data-mascot="reelo" width="208" height="208" role="img" aria-label="Reelo, the film reel"></canvas>
+            <span class="t-name">Reelo</span>
+            <span class="t-kind" data-i18n="kindReelo">Film reel · main mascot</span>
+            <span class="t-quote" data-i18n="quoteReelo">“Roll it!”</span>
+            <span class="t-mood"></span>
+          </button>
+          <button type="button" class="ticket" data-mascot-card="popi">
+            <canvas data-mascot="popi" width="208" height="208" role="img" aria-label="Popi, the popcorn bucket"></canvas>
+            <span class="t-name">Popi</span>
+            <span class="t-kind" data-i18n="kindPopi">Popcorn bucket · Instagram</span>
+            <span class="t-quote" data-i18n="quotePopi">“Crunch!”</span>
+            <span class="t-mood"></span>
+          </button>
+          <button type="button" class="ticket" data-mascot-card="tiko">
+            <canvas data-mascot="tiko" width="208" height="208" role="img" aria-label="Tiko, the cinema ticket"></canvas>
+            <span class="t-name">Tiko</span>
+            <span class="t-kind" data-i18n="kindTiko">Cinema ticket · TikTok</span>
+            <span class="t-quote" data-i18n="quoteTiko">“Click, ticket checked!”</span>
+            <span class="t-mood"></span>
+          </button>
+          <button type="button" class="ticket" data-mascot-card="telo">
+            <canvas data-mascot="telo" width="208" height="208" role="img" aria-label="Telo, the tube TV"></canvas>
+            <span class="t-name">Telo</span>
+            <span class="t-kind" data-i18n="kindTelo">Tube TV · YouTube Shorts</span>
+            <span class="t-quote" data-i18n="quoteTelo">“We're back on air!”</span>
+            <span class="t-mood"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="sec sec-alt">
+      <div class="wrap">
+        <h2 data-i18n="featTitle">What it does</h2>
+        <div class="feats">
+          <article class="feat">
+            <h3 data-i18n="f1t">Streak keeper</h3>
+            <p data-i18n="f1d">At 00.00 Reelo opens TikTok and sends one of your own messages to every friend you have a streak with. Phone locked? It waits until you unlock. Something failed? It tries again after 10 and 20 minutes, and reminds you at 20.00 and 23.00.</p>
+          </article>
+          <article class="feat">
+            <h3 data-i18n="f2t">Reel counter</h3>
+            <p data-i18n="f2d">Counts new reels, not swipes. Each reel gets a fingerprint, so scrolling back up never counts twice. Optional daily limits, a Pause Card, night curfew and a 25-minute focus mode.</p>
+          </article>
+          <article class="feat">
+            <h3 data-i18n="f3t">Home screen widgets</h3>
+            <p data-i18n="f3d">2×2, 4×2 and a 4×1 cinema marquee. See which streaks are still at risk, and tap the widget to send them right away.</p>
+          </article>
+          <article class="feat">
+            <h3 data-i18n="f4t">Private by design</h3>
+            <p data-i18n="f4d">The app has no internet permission, so your data never leaves your phone. Text on screen is turned into a hash and thrown away.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="install" class="sec">
+      <div class="wrap two">
+        <div>
+          <h2 data-i18n="instTitle">Install in 4 steps</h2>
+          <ol class="steps">
+            <li data-i18n="s1">Tap Download APK above.</li>
+            <li data-i18n="s2">Open the file. When Android asks, allow your browser to install unknown apps.</li>
+            <li data-i18n="s3">Open Reelo, then turn it on in Settings › Accessibility › Reelo.</li>
+            <li data-i18n="s4">Xiaomi, POCO or Redmi: set Reelo's battery to No restrictions, turn on Autostart, and allow “Open new windows while running in the background”.</li>
+          </ol>
+          <p class="note" data-i18n="protect">Play Protect may show a warning because Reelo isn't on the Play Store and uses Accessibility. That's expected for apps installed this way.</p>
+        </div>
+
+        <div class="side">
+          <div class="card">
+            <h3 data-i18n="verTitle">Check your download</h3>
+            <p data-i18n="verText">Only get Reelo from this page or the official GitHub release. The file's SHA-256 checksum should be:</p>
+            <code id="sha" class="sha">4a33f15181dda7ea3d5c7b3cd5a39999c8b12bd8187b1a088826d884cf9cea73</code>
+            <button type="button" id="copy-sha" class="btn btn-small" data-i18n="copy">Copy checksum</button>
+          </div>
+
+          <div class="card">
+            <h3 id="notes-title"><span data-i18n="notesTitle">Release notes</span> <span id="notes-tag">v1.0</span></h3>
+            <p id="notes-date" class="muted"></p>
+            <p id="notes-body" class="notes">APK Android (sideload). Download Reelo-v1.0.apk, buka di HP, izinkan 'Instal dari sumber tidak dikenal'. Setelah dibuka, nyalain Reelo di Setelan &gt; Aksesibilitas. App ini nggak pakai internet.</p>
+            <a href="https://github.com/OneillAlim/reelo/releases" rel="noopener noreferrer" data-i18n="allReleases">All releases on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec-warn">
+      <div class="wrap">
+        <p class="warn"><strong data-i18n="warnHead">Heads up.</strong> <span data-i18n="warnText">The streak keeper automates TikTok, which goes against TikTok's rules on automation. Use it at your own risk.</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <p><span data-i18n="madeBy">Made by</span> <a href="https://github.com/OneillAlim" rel="noopener noreferrer">Bryan O'Neill Alim</a> &amp; <a href="https://github.com/stevenwidinata-sys" rel="noopener noreferrer">Steven Widinata</a></p>
+      <p class="muted" data-i18n="notAffiliated">Not affiliated with TikTok, YouTube or Instagram.</p>
+    </div>
+  </footer>
+</body>
+</html>
