@@ -3,7 +3,7 @@
 Download page for [Reelo](https://github.com/OneillAlim/reelo), an Android app that keeps your TikTok streaks alive
 every night at 00.00 and counts the reels you watch, with four pixel mascots.
 
-**Live:** https://stevenwidinata-sys.github.io/reelo-site/
+**Live:** https://stevenwidinata.github.io/reelo-site/
 
 ![Reelo mascots](img/og.png)
 
